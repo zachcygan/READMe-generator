@@ -51,8 +51,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fileName = data.projectName;
-
-    console.log(data.license)
+    
     let badge;
     switch(data.license) {
         case 'MIT License':
