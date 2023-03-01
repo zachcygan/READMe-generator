@@ -44,7 +44,22 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license would you like to add to your project?',
-        choices: ["MIT License", "Apache License 2.0", "GNU General Public License v3.0", "Boost Software License 1.0"]
+        choices: [{
+            name: "MIT License",
+            index: 0,
+        }, 
+        {
+            name: "Apache License 2.0",
+            index: 1,
+        },
+        {
+            name: "GNU General Public License v3.0",
+            index: 2,
+        },
+        {
+            name:  "Boost Software License 1.0",
+            index: 3,
+        }]
     },
 ];
 
@@ -52,8 +67,35 @@ const questions = [
 function writeToFile(fileName, data) {
     fileName = data.projectName;
 
+    console.log(data.license)
+    let badge;
+    switch(data.license) {
+        case 'MIT License':
+            badge = '[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)';
+            break;
+        case 'Apache License 2.0':
+            badge = '80-89';
+          break;
+        case 'GNU General Public License v3.0':
+            badge = '70-79';
+          break;
+        case 'Boost Software License 1.0':
+            badge = '60-69';
+          break;
+        default:
+            badge = '0';
+          break;
+      }
+
+    const readMeBadges = [
+        '[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)',
+        ''
+    ]
+
     const readMe = `
-# <${data.projectName}>
+${badge}
+
+# ${data.projectName}
 
 ## Description
     
@@ -93,11 +135,17 @@ This application is covered under the ${data.license}.
     
 ## How to Contribute
     
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+${data.contribution}
     
 ## Tests
     
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.`
+Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+
+## Questions
+
+
+
+`
 
     fs.writeFile(fileName, readMe, (err) =>
         err ? console.log(err) : console.log('Success!')
@@ -117,3 +165,4 @@ function init() {
 
 // Function call to initialize app
 init();
+
