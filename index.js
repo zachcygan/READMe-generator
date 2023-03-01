@@ -59,13 +59,13 @@ function writeToFile(fileName, data) {
             badge = '[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)';
             break;
         case 'Apache License 2.0':
-            badge = '';
+            badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
           break;
         case 'GNU General Public License v3.0':
             badge = '';
           break;
         case 'Boost Software License 1.0':
-            badge = '';
+            badge = '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)';
           break;
         default:
             badge = '';
@@ -105,11 +105,6 @@ ${data.usage}
     
 This application is covered under the ${data.license}.
     
-## Badges
-    
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-    
-    
 ## Features
     
     
@@ -123,6 +118,9 @@ Go the extra mile and write tests for your application. Then provide examples on
 
 ## Questions
 
+Github Profile: https://github.com/${data.name}
+
+If you have any questions, please contact me at: ${data.email}
 
 
 `
