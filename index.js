@@ -44,22 +44,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license would you like to add to your project?',
-        choices: [{
-            name: "MIT License",
-            index: 0,
-        }, 
-        {
-            name: "Apache License 2.0",
-            index: 1,
-        },
-        {
-            name: "GNU General Public License v3.0",
-            index: 2,
-        },
-        {
-            name:  "Boost Software License 1.0",
-            index: 3,
-        }]
+        choices: ["MIT License", "Apache License 2.0", "GNU General Public License v3.0", "Boost Software License 1.0"]
     },
 ];
 
