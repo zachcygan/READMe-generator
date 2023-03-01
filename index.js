@@ -59,16 +59,16 @@ function writeToFile(fileName, data) {
             badge = '[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)';
             break;
         case 'Apache License 2.0':
-            badge = '80-89';
+            badge = '';
           break;
         case 'GNU General Public License v3.0':
-            badge = '70-79';
+            badge = '';
           break;
         case 'Boost Software License 1.0':
-            badge = '60-69';
+            badge = '';
           break;
         default:
-            badge = '0';
+            badge = '';
           break;
       }
 
