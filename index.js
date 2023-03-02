@@ -11,7 +11,7 @@ const questions = [
         message: 'What is your github username?',
     },
     {
-        type: 'input',
+        type: 'password',
         name: 'email',
         message: 'Where is your email address?',
     },
@@ -46,6 +46,11 @@ const questions = [
         message: 'Which license would you like to add to your project?',
         choices: ["MIT License", "Apache License 2.0", "GNU General Public License v3.0", "Boost Software License 1.0"]
     },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'What are the test instructions?'
+    }
 ];
 
 // TODO: Create a function to write README file
@@ -88,6 +93,8 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Usage](#usage)
 - [License](#license)
 - [Contribute](#Contribute)
+- [Test](#Test)
+- [Questions](#Questions)
     
 ## Installation
     
@@ -104,6 +111,10 @@ This application is covered under the ${data.license}.
 ## Contribute
     
 ${data.contribution}
+
+## Test
+
+${data.test}
 
 ## Questions
 
