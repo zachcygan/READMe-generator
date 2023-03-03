@@ -1,0 +1,47 @@
+
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+
+# README Generator
+
+## Description
+    
+My motivation for this project is to make it easier to develop READMEs in the future. Simply run the program and answer the questions prompted to you and the readMe file will be generated inside the folder it is located in.
+    
+## Table of Contents (Optional)
+    
+If your README is long, add a table of contents to make it easy for users to find what they need.
+    
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contribute](#Contribute)
+- [Test](#Test)
+- [Questions](#Questions)
+    
+## Installation
+    
+The webpage is available at https://zachcygan.github.io/READMe-generator. Be sure to install any dependencies by typing in "npm i" in the console. This will install inquirer, the backbone of this project.
+    
+## Usage
+    
+Usage information for the project would be placed here.
+    
+## License
+    
+This application is covered under the Boost Software License 1.0.
+    
+## Contribute
+    
+Contribution guidelines for your project would go here.
+
+## Test
+
+Test instructions would go here
+
+## Questions
+
+Github Profile: https://github.com/zachcygan
+
+If you have any questions, please contact me at: zachcygan@gmail.com
+
+
